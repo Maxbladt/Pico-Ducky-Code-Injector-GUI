@@ -29,17 +29,27 @@ To Begin input your python code (or another programming language code - Not test
 
 ![Working of Pico-Ducky-Code-Injector](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1cb418a260986a14c5c2eed3eb6bb33a637a5580/images/Example_Normal_payload.png)
 
-## 2. Payload shortening
+## 3. Payload shortening
 
 The comments are made to be readable and explained using REM comments. Ofcourse if you want to penetrate something you want these scripts to be as lightweight as possible. A feature called "Delete whitespace and REM comments" has been made in the form of a checkbox. If pressed it will produce the following output.
 
 ![Payload shortening](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1cb418a260986a14c5c2eed3eb6bb33a637a5580/images/Example_Shortened_Payload.png)
 
-## 2. Saving payload
+## 4. Saving payload
 
 The GUI has two to save payloads. One via the "Copy payload" button which copies the output, and one via the "Save payload" button which saves it to the same directory as "payload.dd". After having saved this payload you can upload it to your pico ducky or convert it and put it on your USB Rubber ducky. This is how your pico Ducky is supposed to look. If you plug it in it will imediately start injecting, saving and executing the python script.
 
-![Saving payload](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1cb418a260986a14c5c2eed3eb6bb33a637a5580/images/Example_Shortened_Payload.png)
-![alt text]()
-![alt text]()
+![Saving payload](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1772cf870cae7f45d420b9e807f8b5540d3cf109/images/Payload_coppied_in_Raspberry_Pico.png)
 
+## 5. Execution
+
+What I think is cool about this script is that it enables you to inject long python programs into a single command line and then echo it into your code file. Underneath an example is shown from a Python reverse shell which is succesfully deployed using this translator. After that the Nano text editor shows how the code is still formatted 100% correctly. I will include the code for the reverse shell.
+
+
+![Terminal after executing python Reverse shell](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1772cf870cae7f45d420b9e807f8b5540d3cf109/images/Terminal_Look_After_Injection.png)
+
+![Nano editor view of python file after execution](https://github.com/Maxbladt/Pico-Ducky-Code-Injector-GUI/blob/1772cf870cae7f45d420b9e807f8b5540d3cf109/images/Nano_Preview_After_Injection.png)
+
+## 6. Disclaimer
+
+This tool is for educational reasons only and I do not endorse illigal activities. Next to that you take full responsibility using this script and the risks which are involved with a HID device. I do endorse people using this for pentesting and learning how to protect themselves against HID's.
